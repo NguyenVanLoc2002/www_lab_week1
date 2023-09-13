@@ -27,6 +27,9 @@ dependencies {
   implementation 'org.mariadb.jdbc:mariadb-java-client:3.2.0'
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+  //jstl
+  implementation group: 'jstl', name: 'jstl', version: '1.2'
 }
 
 test {

@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.Connect;
+package vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.connect;
 
 import java.sql.*;
 
