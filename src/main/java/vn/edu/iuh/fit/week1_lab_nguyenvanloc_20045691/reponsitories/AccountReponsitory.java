@@ -33,7 +33,7 @@ public class AccountReponsitory {
     }
 
     public boolean updatetAccount(Account account) throws Exception{
-        String sql = "update account set full_name =?, password=?, status = ? where id =?";
+        String sql = "update account set full_name =?, password=?, status = ? where account_id =?";
         PreparedStatement ps = connection.prepareStatement(sql);
         ps.setString(1, account.getFull_name());
         ps.setString(2, account.getPassword());
@@ -43,7 +43,7 @@ public class AccountReponsitory {
     }
 
     public boolean deleteAccount(String id) throws Exception{
-        String sql = "delete from account where id =?";
+        String sql = "delete from account where account_id =?";
         PreparedStatement ps = connection.prepareStatement(sql);
         ps.setString(1, id);
         return ps.executeUpdate()>0;
@@ -51,13 +51,26 @@ public class AccountReponsitory {
 
 
     public Optional<Account> getById(String id) throws Exception{
-        String sql = "select * from account where id = ?";
+        String sql = "select * from account where account_id = ?";
         PreparedStatement ps = connection.prepareStatement(sql);
         ps.setString(1, id);
         ResultSet rs = ps.executeQuery();
         if(rs.next()){
             Account account = new Account(rs.getString(1),rs.getString(2),rs.getString(3)
             ,rs.getString(4),rs.getString(5),rs.getInt(6));
+            return  Optional.of(account);
+        }
+        return Optional.empty();
+    }
+
+    public Optional<Account> getByUserName(String name) throws Exception{
+        String sql = "select * from account where full_name = ?";
+        PreparedStatement ps = connection.prepareStatement(sql);
+        ps.setString(1, name);
+        ResultSet rs = ps.executeQuery();
+        if(rs.next()){
+            Account account = new Account(rs.getString(1),rs.getString(2),rs.getString(3)
+                    ,rs.getString(4),rs.getString(5),rs.getInt(6));
             return  Optional.of(account);
         }
         return Optional.empty();
