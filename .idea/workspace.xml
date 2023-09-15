@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42eec2fe-ea35-4684-b6d2-9e1d258fdc23" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/controllers/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/controllers/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/LogReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/LogReponsitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accountInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/accountInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="42eec2fe-ea35-4684-b6d2-9e1d258fdc23" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -269,7 +263,7 @@
       <workItem from="1694679521223" duration="10306000" />
       <workItem from="1694696430198" duration="2809000" />
       <workItem from="1694745160722" duration="36123000" />
-      <workItem from="1694790722445" duration="4656000" />
+      <workItem from="1694790722445" duration="5027000" />
     </task>
     <task id="LOCAL-00001" summary="create project, structure.">
       <option name="closed" value="true" />
@@ -303,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694790770980</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create project, structure.">
+      <option name="closed" value="true" />
+      <created>1694795624083</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694795624083</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
