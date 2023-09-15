@@ -65,7 +65,7 @@ public class RoleReponsitory {
         PreparedStatement ps = connection.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
         List<Role> list = new ArrayList<>();
-        if (rs.next()) {
+        while (rs.next()) {
             Role role = new Role(rs.getString(1),
                     rs.getString(2), rs.getString(3), rs.getInt(4));
             list.add(role);

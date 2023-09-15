@@ -51,7 +51,7 @@ public class LogReponsitory {
         PreparedStatement ps = connection.prepareCall(sql);
         ResultSet rs = ps.executeQuery();
         List<Logs> list = new ArrayList<>();
-        if (rs.next()) {
+        while (rs.next()) {
             Logs log = new Logs(rs.getInt(1), rs.getString(2),
                     rs.getTimestamp(3), rs.getTimestamp(4), rs.getString(5));
             list.add(log);

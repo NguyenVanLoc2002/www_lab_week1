@@ -8,17 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Dashboard</title>
+    <title>AccountInfomation</title>
 </head>
 <body>
-<h1>Dashboard</h1>
+<h1>Account Infomation</h1>
     <c:if test="${not empty loggedInAccount}">
         <p>Xin chào, ${loggedInAccount.full_name}!</p>
+        <p>ID: ${loggedInAccount.id}</p>
         <p>Email: ${loggedInAccount.email}</p>
         <p>Phone: ${loggedInAccount.phone}</p>
         <p>Trạng thái: ${loggedInAccount.status}</p>
     </c:if>
-
-    <a href="logout.jsp">Đăng xuất</a>
+<a href="index.jsp">Đăng xuất</a>
 </body>
 </html>
