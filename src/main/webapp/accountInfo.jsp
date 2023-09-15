@@ -19,6 +19,10 @@
         <p>Phone: ${loggedInAccount.phone}</p>
         <p>Trạng thái: ${loggedInAccount.status}</p>
     </c:if>
-<a href="index.jsp">Đăng xuất</a>
+<br/>
+<form action="ControllerServlet" method="post">
+    <input type="submit" value="logout">
+    <input type="hidden" name="action" value="logout">
+</form>
 </body>
 </html>

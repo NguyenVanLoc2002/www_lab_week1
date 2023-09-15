@@ -20,5 +20,11 @@
     <a href="ControllerServlet?action=getListRoles">Xem quyền</a>
     <br/>
     <a href="ControllerServlet?action=grantRoles">Cấp quyền</a>
+    <br/>
+    <br/>
+    <form action="ControllerServlet" method="post">
+        <input type="submit" value="logout">
+        <input type="hidden" name="action" value="logout">
+    </form>
 </body>
 </html>

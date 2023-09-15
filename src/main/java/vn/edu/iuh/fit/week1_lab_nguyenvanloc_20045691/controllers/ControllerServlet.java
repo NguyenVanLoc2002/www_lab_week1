@@ -8,16 +8,16 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.models.Account;
-import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.models.GrantAccess;
-import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.models.Is_Grant_Enum;
-import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.models.Role;
+import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.models.*;
 import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.reponsitories.AccountReponsitory;
 import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.reponsitories.GrantAccessReponsitory;
+import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.reponsitories.LogReponsitory;
 import vn.edu.iuh.fit.week1_lab_nguyenvanloc_20045691.reponsitories.RoleReponsitory;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.*;
 
 @WebServlet(urlPatterns = {"/ControllerServlet"})
@@ -64,7 +64,7 @@ public class ControllerServlet extends HttpServlet {
 
 
         HttpSession session = req.getSession();
-        if (action.equals("logon")) {
+        if(action.equals("logon")) {
             logon(req, resp);
         } else if (action.equals("grantRole")) {
             boolean rs = grantRole(req, resp);
@@ -79,6 +79,20 @@ public class ControllerServlet extends HttpServlet {
             } else {
                 resp.sendRedirect("grantRoles.jsp?action=grantRoles?error=KoThemDuoc");
             }
+        } else if (action.equals("logout")) {
+            try {
+                LogReponsitory logReponsitory = new LogReponsitory();
+                List<Logs> list  = logReponsitory.getAll();
+               if(!list.isEmpty()){
+                   Logs log = list.get(list.size() - 1);
+                   Timestamp logout_time = new Timestamp(new Date().getTime());
+                   logReponsitory.updateLog(log.getId(),logout_time);
+                   resp.sendRedirect("index.jsp");
+
+               }
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
 
     }
@@ -91,6 +105,10 @@ public class ControllerServlet extends HttpServlet {
             Account account = accountReponsitory.getByUserName(username).orElse(null);
             HttpSession session = req.getSession();
             if (account != null && account.getPassword().equals(pass)) {
+                LogReponsitory logReponsitory = new LogReponsitory();
+                Timestamp login_time = new Timestamp(new Date().getTime());
+                Timestamp logout_time = new Timestamp(new Date().getTime());
+                logReponsitory.insertLog(account.getId(),login_time, logout_time,"");
                 session.setAttribute("loggedInAccount", account);
                 if (checkRoleAdmin(account.getId())) {
                     resp.sendRedirect("dashboard.jsp");
@@ -105,6 +123,7 @@ public class ControllerServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
 
     public boolean checkRoleAdmin(String id) throws Exception {
         GrantAccessReponsitory grantAccessReponsitory = new GrantAccessReponsitory();

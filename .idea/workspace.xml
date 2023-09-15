@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42eec2fe-ea35-4684-b6d2-9e1d258fdc23" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/grantRoles.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/managerAccount.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/managerRole.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/controllers/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/controllers/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/AccountReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/AccountReponsitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/GrantAccessReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/GrantAccessReponsitory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/LogReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/LogReponsitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/RoleReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/RoleReponsitory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/accountInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/accountInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,6 +269,7 @@
       <workItem from="1694679521223" duration="10306000" />
       <workItem from="1694696430198" duration="2809000" />
       <workItem from="1694745160722" duration="36123000" />
+      <workItem from="1694790722445" duration="4656000" />
     </task>
     <task id="LOCAL-00001" summary="create project, structure.">
       <option name="closed" value="true" />
@@ -303,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694691971510</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create project, structure.">
+      <option name="closed" value="true" />
+      <created>1694790770980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694790770980</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
