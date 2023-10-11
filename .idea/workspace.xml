@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="42eec2fe-ea35-4684-b6d2-9e1d258fdc23" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/week1_db_script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/week1_db_script.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;T:/HK7/LapTrinhWWW/BaiTap/www_lab_week1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;T:/HK7/LapTrinhWWW/BaiTap/www_lab_week2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -266,7 +265,9 @@
       <workItem from="1694679521223" duration="10306000" />
       <workItem from="1694696430198" duration="2809000" />
       <workItem from="1694745160722" duration="36123000" />
-      <workItem from="1694790722445" duration="6019000" />
+      <workItem from="1694790722445" duration="6149000" />
+      <workItem from="1694833312514" duration="189000" />
+      <workItem from="1696645422690" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="create project, structure.">
       <option name="closed" value="true" />
@@ -324,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694796009749</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create project, structure.">
+      <option name="closed" value="true" />
+      <created>1694796810082</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694796810082</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
