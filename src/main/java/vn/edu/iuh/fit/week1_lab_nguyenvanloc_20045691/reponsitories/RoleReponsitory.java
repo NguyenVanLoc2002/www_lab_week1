@@ -73,5 +73,21 @@ public class RoleReponsitory {
         return list;
     }
 
+    public List<Role> getRoleNotExist(String acId) throws Exception{
+        String sql = "SELECT R.*" +
+                "FROM role R" +
+                "LEFT JOIN grant_access GA ON R.role_id = GA.role_id AND GA.account_id = ? WHERE GA.role_id IS NULL";
+        PreparedStatement ps = connection.prepareStatement(sql);
+        ps.setString(1, acId);
+        ResultSet rs = ps.executeQuery();
+        List<Role> list = new ArrayList<>();
+        while (rs.next()) {
+            Role role = new Role(rs.getString(1),
+                    rs.getString(2), rs.getString(3), rs.getInt(4));
+            list.add(role);
+        }
+        return list;
+    }
+
 
 }

@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42eec2fe-ea35-4684-b6d2-9e1d258fdc23" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/controllers/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/controllers/ControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/RoleReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week1_lab_nguyenvanloc_20045691/reponsitories/RoleReponsitory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +93,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;T:/HK7/LapTrinhWWW/BaiTap/www_lab_week2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;T:/HK7/LapTrinhWWW/BaiTap/www_lab_week1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -268,6 +271,11 @@
       <workItem from="1694790722445" duration="6149000" />
       <workItem from="1694833312514" duration="189000" />
       <workItem from="1696645422690" duration="56000" />
+      <workItem from="1697042953666" duration="99000" />
+      <workItem from="1698297329883" duration="32000" />
+      <workItem from="1698308220875" duration="82000" />
+      <workItem from="1699622521858" duration="205000" />
+      <workItem from="1701612196306" duration="4875000" />
     </task>
     <task id="LOCAL-00001" summary="create project, structure.">
       <option name="closed" value="true" />
@@ -333,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694796810082</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="create project, structure.">
+      <option name="closed" value="true" />
+      <created>1697043039909</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697043039909</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

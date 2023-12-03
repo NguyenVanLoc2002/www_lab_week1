@@ -77,6 +77,8 @@ public class ControllerServlet extends HttpServlet {
                     e.printStackTrace();
                 }
             } else {
+                session.getAttribute("listAccount");
+                session.getAttribute("roleList");
                 resp.sendRedirect("grantRoles.jsp?action=grantRoles?error=KoThemDuoc");
             }
         } else if (action.equals("logout")) {
